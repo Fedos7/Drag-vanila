@@ -1,0 +1,89 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto Slab', serif;
+    }
+    body {
+        width: 100vw;
+        height: calc(100vh - 50px);
+        background: linear-gradient(#e66465, #9198e5);
+    }
+    .drop-area {
+        width: 800px;
+        height: 570px;
+        margin: 50px auto;
+        border-radius: 10px;
+        border: 2px dashed rgba(93, 96, 224, .4);
+        padding: 20px;
+        background: rgba(232, 232, 232, .8);
+        transition: .15s ease-in-out all;
+    }
+    #fileUpload {
+        visibility: hidden;
+    }
+    label {
+        color:  rgba(93, 96, 224, .6);
+        font-weight: 500;
+        cursor: pointer;
+    }
+    label:hover {
+        color:  rgba(93, 96, 224, .4);
+    }
+    h3 {
+        font-weight: 400;
+    }
+    #form, #preview-container {
+        text-align: center;
+    }
+    #preview-container {
+        width: 670px;
+        margin: 0 auto;
+        height: 400px;
+        overflow-y: overlay;
+        color: green;
+    }
+    img {
+        width: 200px;
+        height: 220px;
+        border-radius: 15px;
+        margin: 10px;
+        box-shadow: 0 0px 5px 3px rgb(190, 183, 195);
+        transition: .15s ease-in-out all;
+    }
+    img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0px 3px 1px rgb(190, 183, 195);
+    }
+    .drag-enter {
+        /* border-color: rgba(93, 96, 224, .8); */
+        border: 3px dashed rgba(93, 96, 224, .8)  !important;
+        background: rgba(232, 232, 232, .2);
+
+    }
+    input[type="submit"] {
+        margin: 0 auto;
+        width: 200px;
+        display: block;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        color: rgba(93, 96, 224, .6);
+        background: #fff;
+        font-size: 20px;
+        box-shadow: 0px 0px 3px 1px rgba(93, 96, 224, .8);
+        cursor: pointer;
+        outline: none;
+        transition: .15s ease-in-out all;
+    }
+    input[type="submit"]:hover {
+        box-shadow: 0px 0px 4px 1px rgba(93, 96, 224, 1);
+        color: rgba(93, 96, 224, .8);
+    }
+    .error-msg {
+        color: red;
+        margin: 10px 0;
+    }
+    .error-msg, p {
+        font-weight: 300;
+    }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Imgs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div class="drop-area">
+        <form id="form" >
+          <h3>Upload img</h3>
+          <p>(jpg, jpeg, png, gif, pdf)</p>
+          <p><label for="fileUpload">Choose</label> a file or drag it here.</p>
+          
+          <p class="error-msg"></p>
+          
+          <input type="file" id="fileUpload"
+            multiple accept="image/jpeg, image/jpg, image/png, image/gif, application/pdf"
+            onchange="uploadFile(files)">
+            <input type="submit" value="Upload">
+        </form>
+        <div id="preview-container"></div>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+<style>
+</style>
+</html>
